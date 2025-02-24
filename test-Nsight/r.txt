@@ -1,0 +1,8 @@
+memory hit denemeleri:
+->8_SOA_vs_AOS | nvprof --metrics gld_efficiency, gst_efficiency | beklenti = AOS %50, SOA %100
+
+pipeline kernel: 
+->3_simple_cuda_stream_modified  | memory ve stream test overlapp yapıcak. memoryler bir biriyle overlap yapmayacak.
+->2_multiple_kernel_launch | 3 overllaping kernel
+
+
